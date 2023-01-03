@@ -24,17 +24,7 @@ pipeline {
     }
     
    }
-    stage ('Nikto Scan') {
-      steps {
-      sh 'nikto -host 35.77.198.45 -port 8080'
-    }
-   }
-    stage ('DAST') {
-      steps {
-      sh 'steps'
-    }
     
-   }
  }
 }
 
