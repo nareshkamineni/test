@@ -26,7 +26,7 @@ pipeline {
    }
       stage ('nikto') {
       steps {
-      sh 'sudo nikto -h 13.115.144.30 -p 8080 -output /tmp/test.txt'
+      sh 'nikto -h 13.115.144.30 -p 8080 -output /tmp/test.txt'
     }
     
    }
