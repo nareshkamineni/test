@@ -26,7 +26,7 @@ pipeline {
    }
       stage ('nikto') {
       steps {
-      sh 'nikto -h 13.115.144.30 -o scan.txt'
+      sh 'nikto -h 3.112.1.112 -p 8080 -o test.html -F html'
     }
     
    }
